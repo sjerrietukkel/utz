@@ -1,0 +1,22 @@
+{
+  "name": "utz_ra-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjerrietukkel/utz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjerrietukkel/utz/issues"
+  },
+  "homepage": "https://github.com/sjerrietukkel/utz#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0"
+  }
+}
