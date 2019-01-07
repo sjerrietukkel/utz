@@ -22,6 +22,6 @@
     "dotenv": "^6.2.0",
     "node-fetch": "^2.3.0",
     "scrollmagic": "^2.0.6",
-    "tilt.js": "^1.2.1"
+    "vanilla-tilt": "^1.6.1"
   }
 }
