@@ -8,13 +8,16 @@
     <title>UTZ - Infographic</title>
 </head>
 <body>
-        <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-        <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-        
-        <div id="Home" class="tabcontent">
-            <h1 class="heading">Ghanese Farmer Visualised</h1>
+    <h1>The Daily Farmer</h1>
+    <h2>How do three different farmers in the live $1.50 segment?</h2>
+    <div class="tabs">
+        <button class="tablink" onclick="openPage('Home', this, '#614242')">Under $1.25</button>
+        <button class="tablink" onclick="openPage('News', this, '#614242')" id="defaultOpen">$2.00</button>
+        <button class="tablink" onclick="openPage('Contact', this, '#614242')">$2.50</button>
+        <button class="tablink" onclick="openPage('About', this, '#614242')">$3.10</button>
+    </div>    
+    <div id="Home" class="tabcontent">
+            <h2>Under $1.25</h2>
             <div class="container">
                 <img src="img/stack_test.png" alt="test" id="img1">
                 <img src="img/stack_test.png" alt="test">
@@ -23,24 +26,21 @@
         </div>
         
         <div id="News" class="tabcontent">
-          <h3>News</h3>
+          <h2>$2.00</h2>
           <p>Some news this fine day!</p> 
         </div>
         
         <div id="Contact" class="tabcontent">
-          <h3>Contact</h3>
+          <h3>$2.50</h3>
           <p>Get in touch, or swing by for a cup of coffee.</p>
         </div>
         
         <div id="About" class="tabcontent">
-          <h3>About</h3>
+          <h3>$3.00</h3>
           <p>Who we are and what we do.</p>
         </div>
 
-
-
-   
-    
     <script src="index.js"></script>
+    <script src="tabs.js"></script>
 </body>
 </html>
