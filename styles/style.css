@@ -4,6 +4,10 @@
     --beige: #e8dfcf;
 }
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-color: #3C9691;
     height: 100vw;
@@ -11,18 +15,22 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 h1 {
     color: #E8DFCF;
+    text-align: center;
+    width: 100%;
 }
 
 
 .container {
+    border-radius: 15px;
     margin-top: 250px;
-    width: 360px;
-    height: 360px;
+    width: 70%;
+    height: 70%;
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
     transform: rotate(-30deg) skew(15deg) scale(.8); 
@@ -30,10 +38,13 @@ h1 {
 }
 
 .container img {
+    /* border-left: 15px solid rgba(87,59,12, .9); 
+    border-bottom: 15px solid rgba(119, 103, 75, 0.9);  */
+    border-radius: 15px;
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: .5s;
+    transition: .7s ease-out;
 }
 
 .container:hover img:nth-child(1) {
@@ -50,3 +61,43 @@ h1 {
     transform: translate(240px, -240px);
     opacity: 1;
 }
+
+
+@media (min-width: 40em) {
+    .container {
+        width: 50%;
+        height: 50%;
+        margin-top: 0;
+    }
+}
+
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-color: red;}
+  #News {background-color: green;}
+  #Contact {background-color: blue;}
+  #About {background-color: orange;}
