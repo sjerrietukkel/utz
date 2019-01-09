@@ -72,6 +72,13 @@ body > h2 {
     color: var(--bruin)
 }
 
+main > p {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 h1 {
     color: var(--bruin);
     text-align: center;
