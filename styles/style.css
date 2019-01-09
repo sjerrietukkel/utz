@@ -16,7 +16,7 @@ body {
 
 main {
     background-color: var(--beige);
-    height: 100vw;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -192,5 +192,26 @@ h1 {
         width: 50%;
         height: 50%;
         margin-top: 0;
+    }
+}
+
+@media (max-width: 39em) {
+    h1 {
+        color: red;
+    }
+
+    .tabcontent {
+        width: 100%;
+    }
+
+    .tab-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tab-container img {
+        width: 80vw;
+        height: auto;
+        align-self: center;
     }
 }
