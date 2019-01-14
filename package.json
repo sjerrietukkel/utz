@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sjerrietukkel/utz#readme",
   "dependencies": {
+    "d3": "^5.7.0",
     "dotenv": "^6.2.0",
     "node-fetch": "^2.3.0",
     "scrollmagic": "^2.0.6",
