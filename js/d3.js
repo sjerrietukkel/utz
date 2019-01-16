@@ -12,4 +12,10 @@ waffle
 	.enter()
 	.append('div')
 	.attr('class', 'block')
-	.style('background-color', d => (d < 26 ? '#FE4A49' : '#CCCCCC'))
+	.style('background-color', d => (d < 32 ? '#FE4A49' : '#CCCCCC'))
+	
+
+
+d3.csv("/databron/cleaned_dataset_kit.csv").then(function(data) {
+	console.log(data[1]);
+  });
