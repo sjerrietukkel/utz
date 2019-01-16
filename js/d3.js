@@ -16,6 +16,9 @@ waffle
 	
 
 
-d3.csv("/databron/cleaned_dataset_kit.csv").then(function(data) {
-	console.log(data[1]);
-  });
+d3.json("/databron/cleaned_dataset_kit.json").then(function(data) {
+	console.log(data[1])
+  })
+  .catch(function(d){
+	  console.log("Hij laadt niet, vriend.")
+  })
