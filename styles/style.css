@@ -131,7 +131,7 @@ span {
 }
 
 .photo50  img{
-    width: 100%;
+    width: 600px;
 }
 
 .text50 p {
@@ -140,8 +140,11 @@ span {
     text-align: center;
     font-size: 18px;
 }
- 
 
 input {
     width: 300px;
+}
+
+h1, p{
+    text-align: center;
 }

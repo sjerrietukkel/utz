@@ -17,8 +17,28 @@ waffle
 
 
 d3.json("/databron/cleaned_dataset_kit.json").then(function(data) {
-	console.log(data[1])
-  })
+	var byppi = d3.nest()
+		.key(function(d) { return d.ppi })
+		.entries(data)
+
+	// const svg = d3.select(DOM.svg(width, height))
+    //   .style("width", "100%")
+    //   .style("height", "auto")
+	//   .style("font", "10px sans-serif")
+	  
+	// const leaf = svg.selectAll("g")
+	// 	.data(root.leaves())
+	// 	.enter().append("g")
+	// 	.attr("transform", d => `translate(${d.x0},${d.y0})`)
+
+console.log(byppi)
+// console.log(byppi[0].values[0].Cassava)
+// console.log(byppi[0].values[0].Cacao)
+
+
+})
+
+
   .catch(function(d){
 	  console.log("Hij laadt niet, vriend.")
   })
