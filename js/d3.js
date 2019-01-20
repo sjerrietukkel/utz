@@ -3,13 +3,6 @@ d3.json("/databron/cleaned_dataset_kit.json").then(function(data) {
 		.key(function(d) { return d.ppi })
 		.entries(data)
 
-	// var mappedValues = byppi.values.map(d => {
-    //     return {
-    //         avocado: byppi.values[0].Avocado
-    //     }
-	// })
-	
-	// console.log(mappedValues)
 
 	const waffle = d3.select('.waffle')
 	const numbers = d3.range(100)
@@ -20,11 +13,12 @@ d3.json("/databron/cleaned_dataset_kit.json").then(function(data) {
 		.enter()
 		.append('div')
 		.attr('class', 'block')
-		.style('background-color', d => (d < 32 ? '#FE4A49' : '#CCCCCC'))
+		.style('background-color', d => (d < byppi[0].values[0].Cacao - 1 ? '#FE4A49' && d < byppi[0].values[0].Cocoyam - 1 ? '#FF722D' : '#eeeeee'))
 	
 	console.log(byppi)
 	console.log(byppi[0].values[0].Hectare)
 	console.log(byppi[0].values[0].Cacao)
+	console.log(byppi[0].values[0].Cocoyam)
 })
 .catch(function(){
 	console.log("kut.")
