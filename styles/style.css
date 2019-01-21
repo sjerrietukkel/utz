@@ -149,14 +149,14 @@ h1, p{
     text-align: center;
 }
 
-
-
-
-
 /* waffle dinges */
 
 .waffle {
-    width: 1000px;
-    height: 1000px;
+    width: 300px;
+    height: 300px;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.legend_item_text {
+    display: none;
 }
