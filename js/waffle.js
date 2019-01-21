@@ -1,3 +1,5 @@
+// Made by J. Kunst http://jkunst.com/
+
 var WaffleChart = function() {
 
     var $_selector,
@@ -164,6 +166,8 @@ var WaffleChart = function() {
           var row = i % _obj.rows;
           return (_obj.rows * (_obj.size + _obj.gap)) - ((row * _obj.size) + (row * _obj.gap)) - _obj.size - _obj.gap;
         })
+        .attr("rx", "4px")
+        .attr("ry", "4px")
         .append("title")
         .text(function (d, i) {
           return _obj.data[d.groupIndex][$_keys[0]] + ": " + Math.round((d.units / formattedData.length) * 100) + "%";

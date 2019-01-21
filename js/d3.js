@@ -1,26 +1,3 @@
-// d3.json("/databron/cleaned_dataset_kit.json").then(function(data) {
-// 	var byppi = d3.nest()
-// 		.key(function(d) { return d.ppi })
-// 		.entries(data)
-
-
-// 	const waffle = d3.select('.waffle')
-// 	const numbers = d3.range(100)
-
-// 	waffle
-// 		.selectAll('.block')
-// 		.data(numbers)
-// 		.enter()
-// 		.append('div')
-// 		.attr('class', 'block')
-// 		.style('background-color', d => (d < byppi[0].values[0].Cacao - 1 ? '#FE4A49'  : '#eeeeee'))
-	
-// 	console.log(byppi)
-// })
-// .catch(function(){
-// 	console.log("kut.")
-// })
-
 d3.csv("/databron/ppi_0_28.csv", function(err, data) {
 	if (err) {
 	  console.error(err);
@@ -30,10 +7,10 @@ d3.csv("/databron/ppi_0_28.csv", function(err, data) {
 		.data(data)
 		.useWidth(false)
 		.label("Cultivated crops in percentages")
-		.size(12)
+		.size(27.5)
 		.gap(3)
-		.rows(20)
-		.columns(20)
+		.rows(10)
+		.columns(10)
 		.rounded(false)();
 	}
   });
