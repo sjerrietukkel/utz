@@ -21,7 +21,7 @@
 // 	console.log("kut.")
 // })
 
-d3.csv("./testdata.csv", function(err, data) {
+d3.csv("/databron/ppi_0_28.csv", function(err, data) {
 	if (err) {
 	  console.error(err);
 	} else {
@@ -29,29 +29,13 @@ d3.csv("./testdata.csv", function(err, data) {
 		.selector(".waffle")
 		.data(data)
 		.useWidth(false)
-		.label("Value of producers' sales in 2013, in thousands of dollars")
+		.label("Cultivated crops in percentages")
 		.size(12)
-		.gap(2)
+		.gap(3)
 		.rows(20)
-		.columns(50)
-		.rounded(true)();
+		.columns(20)
+		.rounded(false)();
 	}
   });
 
-  // source: http://statshb.capp.ca/SHB/Sheet.asp?SectionID=4&SheetID=265
-
-// d3.csv("/databron/cleaned_dataset_kit.csv").then(function(data) {
-// 	  var waffle = new WaffleChart()
-// 		.selector("#waffle")
-// 		.data(data)
-// 		.useWidth(false)
-// 		.label("Kit")
-// 		.size(12)
-// 		.gap(2)
-// 		.rows(20)
-// 		.columns(50)
-// 		.rounded(true)();
-
-// 		console.log(waffle)
-//   })
   // source: http://statshb.capp.ca/SHB/Sheet.asp?SectionID=4&SheetID=265
