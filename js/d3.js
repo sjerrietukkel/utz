@@ -1,4 +1,4 @@
-d3.csv("/databron/ppi_0_28.csv", function(err, data) {
+d3.csv("./databron/ppi_0_28.csv", function(err, data) {
 	if (err) {
 	  console.error(err);
 	} else {
