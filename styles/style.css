@@ -50,7 +50,7 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 80%;
     height: auto;
 }
 
@@ -120,15 +120,6 @@ p{
     text-align: center;
 }
 
-/* waffle dinges */
-
-.waffle {
-    width: 350px;
-    height: 350px;
-    background-color: none;
-    transition: .5s ease-in;
-}
-
 .legend_item_text {
     display: none;
 }
@@ -142,7 +133,7 @@ p{
 .visualisation {
     background-color: var(--grijs);
     width: 100%;
-    padding: 80px;
+    padding: 60px;
     border: 10px solid var(--roze);
 }
 
@@ -168,11 +159,63 @@ p{
     height: 40px;
 }
 
-#option {
-    justify-content: end;
+.wafflet {
+    float: right;
+    transform: rotate(90deg);
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px, 1px, 1px, 2px;
+    transition: .5s ease-in;
 }
 
 .waffle {
-    justify-content: end;
-    right: 0;
+    padding: 2px;
+    padding-bottom: 0px;
 }
+
+.label {
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -3px;
+    padding-right: 35px;
+}
+
+
+.tablink {
+    background-color: var(--bruin);
+    border-radius: 8px 8px 0 0;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  
+  .tablink:active {
+    box-shadow: 1px 1px 10px var(--oranje);
+    background-color: var(--oranje);
+  }
+
+  .tablink:hover {
+    background-color: var(--oranje);
+  }
+
+  title {
+      padding: 20px;
+  }
+
+  figure {
+      margin: 0;
+  }
+
+  @media (max-width: 40em) {
+    .intro img {
+        display: none;
+    }
+  }

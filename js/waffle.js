@@ -74,12 +74,13 @@ var WaffleChart = function() {
         domain.push(d[$_keys[0]]);
       });
   
-      var red = "#CE2A23";
+      var red = "#492F2A";
   
       var color = d3.scale.linear()
-        .domain([1, _obj.data.length - 1])
+        // .domain([1, _obj.data.length - 1])
+        .domain ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
         .interpolate(d3.interpolateRgb)
-        .range(["#555", "#EEE"]);
+        .range(["#EC2833", "#718E66", "#D11515", "#5E4249", "#E6B83A", "#AE6B3E", "#C28336"]);
   
       // add label
   

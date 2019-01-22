@@ -32,27 +32,66 @@
             <img src="./img/banana34.jpg" alt="banana image">
         </div>
     </div>
-   <div class="visualisation">
+    <div class="visualisation">
        <div class="flex-vis">
             <h1>
                 Introducing
             </h1>
             <img src="./img/logo_cropplay.png" alt="cropplay_logo">
+            <p>CROPLAY is an informative inforgraphic with a light interactive touch. 
+                    This infographic gives you information about the produced crops of a Ghanaian farmer.  
+                    It also shows the size of his land in hectares. A</p>
         </div>
-        <p>
+        <!-- <p>
             CROPPLAY is an informative inforgraphic with a light interactive touch. 
             <br>
             <br>
             This infographic provides you information about the produced crops of a Ghanaian farmer.  
-        </p>
-        <div id="option">
-        <figure class="waffle" id="waffle"></figure>
+        </p> -->
+        <div class="tabs">
+                <button class="tablink" onclick="openPage('0-28', this, '#FF722D' )" id="defaultOpen">0-28</button>
+                <button class="tablink" onclick="openPage('29-35', this, '#FF722D')" >29-35</button>
+                <button class="tablink" onclick="openPage('36-43', this, '#FF722D')">36-43</button>
+                <button class="tablink" onclick="openPage('44-53', this, '#FF722D')">44-53</button>
+                <button class="tablink" onclick="openPage('54-62', this, '#FF722D')">54-62</button>
+                <button class="tablink" onclick="openPage('63-98', this, '#FF722D')">63-98</button>
+            </div>
+        <div id="0-28" class="tabcontent">
+            <div class="vis">
+                <figure class="wafflet" id="waffle"></figure>
+            </div>
+        </div>
+        <div id="29-35" class="tabcontent">
+            <div class="vis">
+                <figure class="wafflet" id="waffle1"></figure>
+            </div>
+        </div>  
+        <div id="36-43" class="tabcontent">
+            <div class="vis">
+                <figure class="wafflet" id="waffle2"></figure>
+            </div>
+        </div>
+        <div id="44-53" class="tabcontent">
+            <div class="vis">
+                <figure class="wafflet" id="waffle3"></figure>
+            </div>
+        </div>
+        <div id="54-62" class="tabcontent">
+            <div class="vis">
+                <figure class="wafflet" id="waffle4"></figure>
+            </div>
+        </div> 
+        <div id="63-98" class="tabcontent">
+            <div class="vis">
+                <figure class="wafflet" id="waffle5"></figure>
+            </div>
+        </div> 
    </div>
-
 </main>
 <script src="js/waffle.js"></script>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
 <script src="js/d3.js"></script>
+<script src="js/tabs.js"></script>
 </body>
 </html>
