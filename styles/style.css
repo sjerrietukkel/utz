@@ -116,9 +116,7 @@ span {
     color: var(--roze);
 }
 
-
-
-h1, p{
+p{
     text-align: center;
 }
 
@@ -144,20 +142,28 @@ h1, p{
 .visualisation {
     background-color: var(--grijs);
     width: 100%;
+    padding: 80px;
+    border: 10px solid var(--roze);
 }
 
 .visualisation h1 {
     font-size: 30px;
     font-weight: 400;
+    color: var(--roze);
     text-transform: uppercase;
+}
+
+.visualisation p {
+    text-align: left;
 }
 
 .flex-vis {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .flex-vis img{
-    width: 175px;
-    height: 75px;
+    width: 188px;
+    height: 40px;
 }
