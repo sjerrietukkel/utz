@@ -49,6 +49,23 @@ d3.csv("./databron/ppi_0_28.csv", function(err, data) {
 	}
   });
 
+  d3.csv("./databron/ppi_44_53.csv", function(err, data) {
+	if (err) {
+	  console.error(err);
+	} else {
+	  var waffle = new WaffleChart()
+		.selector("#waffle3")
+		.data(data)
+		.useWidth(false)
+		.label("Cultivated crops in percentages")
+		.size(45)
+		.gap(3)
+		.rows(10)
+		.columns(10)
+		.rounded(false)();
+	}
+  });
+
   d3.csv("./databron/ppi_54_62.csv", function(err, data) {
 	if (err) {
 	  console.error(err);
