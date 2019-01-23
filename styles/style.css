@@ -14,10 +14,14 @@
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    color: var(--brown);
+}
 body {
     background-color: white;
     padding: 0;
     margin: 0;
+    max-width: 1480px;
 }
 
 main {
@@ -206,6 +210,19 @@ p{
     background-color: var(--oranje);
   }
 
+  .tabflex {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .tabcontent p {
+      /* display: inline-block; */
+      width: 400px;
+      display: inline-block;
+  }
+
   title {
       padding: 20px;
   }
@@ -242,4 +259,14 @@ p{
         margin-left: 10px;
         margin-right: 10px;
     }
+  }
+
+  footer {
+    background-color: #49302B;
+    padding: 50px
+  }
+
+  footer p {
+    text-align: center;
+    color: white;
   }
