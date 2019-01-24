@@ -270,3 +270,21 @@ p{
     text-align: center;
     color: white;
   }
+
+
+  .questions {
+      width:400px;
+      display: inline-block;
+      flex-grow: 1;
+  }
+
+  .questions p {
+      width: 90%;
+      margin-left: 10px;
+  }
+
+  .icon {
+      width: 50px;
+      height: auto;
+      margin-bottom: -10px;
+  }

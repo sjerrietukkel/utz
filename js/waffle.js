@@ -1,4 +1,4 @@
-// Made by J. Kunst http://jkunst.com/
+// based on a waffle chart made by J. Kunst http://jkunst.com/
 
 var WaffleChart = function() {
 
@@ -84,11 +84,11 @@ var WaffleChart = function() {
       var pepper = "#EC2833"
       var okra = "#718E66"
       var palm = "#948C42"
-      var rice = "#AAAAAA"
+      var rice = "#FFFFFF"
       var eggplant = "#5E4249"
       var chili = "#D11515"
       var coconut = "#5B2F16"
-      var other = "#E3A900"
+      var other = "#AAAAAA"
       var orange = "#FF722D"
       var yam= "#ff9b3b"
       var tomatoes="#ff6347"
@@ -308,6 +308,11 @@ var WaffleChart = function() {
           .attr("ry", (_obj.size / 2));
       }
   
+      // rect.append("text")
+      //   .text(function(d) { return d.crop })
+      //   .style("text-anchor", "middle")
+      //   .style("font-family", "Arial, Helvetica, sans-serif")
+      //   .style("font-size", "12px")
     }
   
     generatedWaffleChart.selector = function(value){
