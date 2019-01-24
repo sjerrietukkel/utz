@@ -98,8 +98,9 @@ main > p {
 
 .intro h3 {
     color: var(--bruin);
-    text-align: center;
+    text-align: left;
     font-size: 35px;
+    margin-left: 100px
 }
 
 .intro h2 {
@@ -161,6 +162,7 @@ p{
 .flex-vis img{
     width: 188px;
     height: 40px;
+    margin-left: -10px;
 }
 
 .wafflet {
@@ -231,6 +233,34 @@ p{
       margin: 0;
   }
 
+  footer {
+    background-color: #49302B;
+    padding: 50px
+  }
+
+  footer p {
+    text-align: center;
+    color: white;
+  }
+
+
+  .questions {
+      width:400px;
+      display: inline-block;
+      flex-grow: 1;
+  }
+
+  .questions p {
+      width: 90%;
+      margin-left: 10px;
+  }
+
+  .icon {
+      width: 50px;
+      height: auto;
+      margin-bottom: -10px;
+  }
+
   @media (max-width: 40em) {
     .intro img {
         display: none;
@@ -259,32 +289,23 @@ p{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .tablink {
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        width: 50px;
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .questions p {
+        width: 60%;
+        margin-left: 10px;
+    }
   }
 
-  footer {
-    background-color: #49302B;
-    padding: 50px
-  }
-
-  footer p {
-    text-align: center;
-    color: white;
-  }
-
-
-  .questions {
-      width:400px;
-      display: inline-block;
-      flex-grow: 1;
-  }
-
-  .questions p {
-      width: 90%;
-      margin-left: 10px;
-  }
-
-  .icon {
-      width: 50px;
-      height: auto;
-      margin-bottom: -10px;
-  }
+  
