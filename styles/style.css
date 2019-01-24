@@ -235,12 +235,16 @@ p{
 
   footer {
     background-color: #49302B;
-    padding: 50px
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
   }
 
   footer p {
-    text-align: center;
-    color: white;
+    text-align: right;
+    color: #AAAAAA;
+    margin: 4px;
   }
 
 
