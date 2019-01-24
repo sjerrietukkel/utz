@@ -95,10 +95,10 @@ var WaffleChart = function() {
 
   
       // var color = d3.scale.linear()
-        // .domain([1, _obj.data.length - 1])
-        // .domain ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
-        // .interpolate(d3.interpolateRgb)
-        // .range(["#EC2833", "#718E66", "#D11515", "#5E4249", "#E6B83A", "#AE6B3E", "#C28336"]);
+      //   .domain([1, _obj.data.length - 1])
+      //   .domain ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+      //   .interpolate(d3.interpolateRgb)
+      //   .range(["#EC2833", "#718E66", "#D11515", "#5E4249", "#E6B83A", "#AE6B3E", "#C28336"]);
   
       // add label
   
