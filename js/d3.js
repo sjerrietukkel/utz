@@ -1,6 +1,6 @@
 d3.csv("./databron/ppi_0_28.csv", function(err, data) {
 	if (err) {
-	  console.error(err);
+		console.error(err)
 	} else {
 	  var waffle = new WaffleChart()
 		.selector("#waffle")

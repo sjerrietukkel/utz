@@ -61,7 +61,6 @@ var WaffleChart = function() {
       var squareVal = total / (_obj.rows * _obj.columns);
   
       _obj.data.forEach(function(d, i) {
-        // console.log(d)
         d[value] = +d[value];
         d.units = Math.floor(d[value] / squareVal);
         Array(d.units + 1).join(1).split('').map(function() {
@@ -127,7 +126,6 @@ var WaffleChart = function() {
       var legendIcon = legendItem.append("div")
         .attr("class", "legend_item_icon")
         .style("background-color", function(d) {
-          // console.log(d.crop)
           if (d.crop=="cacao") {
               return cacao
           }
@@ -225,7 +223,6 @@ var WaffleChart = function() {
         .attr("width", _obj.size)
         .attr("height", _obj.size)
         .attr("fill", function(d) {
-          console.log(d)
         if (d.crop=="cacoa") {
             return cacao;
         }
